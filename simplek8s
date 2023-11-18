@@ -16,6 +16,6 @@ spec:
     spec:  
       containers:
       - name: robots 
-        image: mazure-nginix   
+        image: azure-nginix   
         ports: 
         - containerPort: 8080
