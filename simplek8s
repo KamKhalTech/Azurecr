@@ -1,0 +1,21 @@
+kind:  ReplicationController
+apiVersion: v1   
+metadata:  
+  name: apprc      
+  labels:
+    app: myapp 
+spec:
+  selector: 
+    app: fe  
+  replicas: 2    
+  template:  #podTemplate 
+    metadata: 
+      name: apppod  
+      labels:
+        app: fe 
+    spec:  
+      containers:
+      - name: robots 
+        image: mazure-nginix   
+        ports: 
+        - containerPort: 8080
