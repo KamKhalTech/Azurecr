@@ -1,0 +1,2 @@
+FROM nginx
+ADD https://hub.docker.com/_/nginx /usr/share/nginx/html
